@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Simple Form</h1>
+        <section>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+    
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone:</label><br>
+                <input type="phone" id="phone" name="phone" required><br><br>
+
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" required><br><br>
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </fieldset>
+                <fieldset> <legend>Hobbies</legend>
+                <input type="checkbox" id="hobby1" name="hobbies[]" value="reading">
+                <label for="hobby1">Reading</label><br>
+                <input type="checkbox" id="hobby2" name="hobbies[]" value="traveling">
+                <label for="hobby2">Traveling</label><br>
+                <input type="checkbox" id="hobby3" name="hobbies[]" value="sports">
+                <label for="hobby3">Sports</label><br>
+                <input type="checkbox" id="hobby4" name="hobbies[]" value="music">
+                <label for="hobby4">Music</label><br>
+                </fieldset><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <input type="reset" value="Reset">
+    
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        
+        <p>Thank you for your feedback!</p>
+    </main>
+    
+</body>
+</html>
