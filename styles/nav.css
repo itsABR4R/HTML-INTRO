@@ -1,0 +1,25 @@
+nav  ul {
+  display: flex;
+  padding-left: 0;
+}
+nav  li {
+  list-style: none;
+  padding: 5px;
+}
+
+nav  li:not(:last-child) {
+  margin-right: 10px;
+}
+nav  li:hover {
+  background-color: #f0f0f0;
+  color: #007BFF;
+}
+nav  li:hover a {
+  color: #0000ff;
+}
+nav  li  a {
+  text-decoration: none;
+  color: #333333;
+  
+
+}
